@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mystore</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- En-tête -->
+  <header>
+    <h1 style="color:#0ff; text-align:center;">Bienvenue sur Mystore</h1>
+    <div style="text-align:center; margin-top:20px;">
+      <button onclick="chargerProduits()">Voir les produits</button>
+      <button onclick="chargerUsers()">Voir les utilisateurs</button>
+      <button onclick="chargerOrders()">Voir les commandes</button>
+    </div>
+  </header>
+
+  <!-- Contenu principal -->
+  <main style="padding:20px;">
+    <section id="products">
+      <h2 style="color:#0ff;">🛒 Produits</h2>
+      <div id="products-list"></div>
+    </section>
+
+    <section id="users" style="margin-top:30px;">
+      <h2 style="color:#0ff;">👤 Utilisateurs</h2>
+      <div id="users-list"></div>
+    </section>
+
+    <section id="orders" style="margin-top:30px;">
+      <h2 style="color:#0ff;">📦 Commandes</h2>
+      <div id="orders-list"></div>
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
